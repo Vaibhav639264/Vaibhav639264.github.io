@@ -1,6 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Add this inside your <head> tag -->
+<style>
+  body {
+    background: linear-gradient(135deg, #14222d 0%, #07263b 100%);
+    color: #e6faff;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    letter-spacing: 0.04em;
+  }
+  .container, main, section, .card, .profile-section {
+    background: rgba(19,37,51,0.98);
+    border-radius: 15px;
+    margin-bottom: 1.7em;
+    padding: 1.7em 1.4em;
+    box-shadow: 0 0 30px 0 #01f4ea4d;
+    border-left: 6px solid #01e1ff;
+  }
+  h1, h2, h3, h4 {
+    color: #07f6d4;
+    text-shadow: 0 0 6px #07f6d4c0, 0 2px 16px #111b;
+    font-family: 'Share Tech Mono', 'Segoe UI', 'Roboto', Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #18f06f88;
+    padding-bottom: 5px;
+  }
+  h2, h3 {
+    color: #18f06f;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+  }
+  a, a:visited {
+    color: #0cc8ee;
+    text-decoration: none;
+    border-bottom: 1.5px dashed #0cc8ee80;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  a:hover {
+    color: #0dfa6f;
+    background: #01e1ff22;
+    border-bottom: 2px solid #0dfa6f;
+  }
+  ul, ol {
+    padding-left: 1.2em;
+    margin-bottom: 1em;
+  }
+  li::marker {
+    color: #01e1ff;
+  }
+  .declaration, .highlight, .profile-callout {
+    background: #163a37f2;
+    border-left: 4.5px solid #18f06f;
+    border-radius: 7px;
+    padding: 1em;
+    color: #d8fbe9;
+    margin-top: 1.4em;
+    margin-bottom: 0.8em;
+    font-size: 1em;
+    box-shadow: 0 2px 12px #18f06f24;
+  }
+  .card, .profile-section {
+    box-shadow: 0 3px 18px #01e1ff19;
+    border: none;
+    padding: 1.5em;
+  }
+  .divider, hr {
+    border: none;
+    height: 2.5px;
+    margin: 2em 0 1.5em 0;
+    background: linear-gradient(90deg,#0dfa6f 0, #01e1ff 90%, #0000 100%);
+    border-radius: 1.5px;
+    box-shadow: 0 0 18px #07f6d45e;
+  }
+  /* Buttons or contact chips (if any) */
+  button, .btn, .contact-btn {
+    background: linear-gradient(90deg, #01e1ff 50%, #0dfa6f 100%);
+    color: #032830;
+    font-weight: bold;
+    padding: 0.54em 1.4em;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px #07f6d466;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.35em 0.5em 0.35em 0;
+    transition: background .2s, color .2s;
+  }
+  button:hover, .btn:hover, .contact-btn:hover {
+    background: linear-gradient(90deg, #0dfa6f 0, #01e1ff 90%);
+    color: #101e3b;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 750px) {
+    body { font-size: 0.97em; }
+    h1 { font-size: 1.3em; }
+    .container, main, section, .profile-section, .card { padding: 1.1em 0.6em; }
+    .declaration { font-size: 0.97em; }
+  }
+  /* Futuristic font for a hacking vibe */
+  @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+</style>
+
   <meta charset="UTF-8">
   <title>Vaibhav Malhotra – Professional Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
