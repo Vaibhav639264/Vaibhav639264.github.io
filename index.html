@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Vaibhav Malhotra &mdash; Cybersecurity Expert & Trainer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,6 +152,37 @@
             header {padding: 1.2rem 0.5rem;}
             nav {margin:0.7em 0 1.5em 0;}
         }
+	    @media (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+  .contact-quick, nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.6em !important;
+    align-items: stretch !important;
+  }
+  .contact-quick a,
+  nav a {
+    width: 100% !important;
+    min-width: unset !important;
+    margin: 0.2em 0 !important;
+    text-align: center !important;
+    font-size: 1.08rem !important;
+    padding: 0.8em 0.4em !important;
+    box-sizing: border-box !important;
+  }
+  nav {
+    padding: 0 2vw !important;
+  }
+  .main-content, section {
+    padding-left: 0.6em !important;
+    padding-right: 0.6em !important;
+  }
+}
     </style>
 </head>
 <body>
