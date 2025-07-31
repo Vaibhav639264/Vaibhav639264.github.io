@@ -1,379 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Vaibhav Malhotra &mdash; Cybersecurity Expert & Trainer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Vaibhav Malhotra &mdash; Cybersecurity Analyst, Trainer, and Thought Leader">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-gradient: linear-gradient(120deg, #1f242d, #0f2027, #086972);
-            --dark: #1f242d;
-            --accent: #1fe0ae;
-            --accent-soft: #46ffca22;
-            --white: #eff1f3;
-            --grey: #d6d6da;
-            --cyber-blue: #00c4ff;
-            --cyber-red: #ff1744;
-            --box-shadow: 0 4px 32px rgba(30,40,55,0.25);
-            --border-radius: 16px;
-        }
-        body {
-            margin: 0;
-            font-family: 'Montserrat', 'Roboto Mono', monospace, sans-serif;
-            background: var(--bg-gradient);
-            color: var(--white);
-        }
-        header {
-            padding: 3rem 2rem 1rem 2rem;
-            background: rgba(12, 22, 32, 0.92);
-            border-bottom: 2px solid var(--accent);
-            text-align: center;
-            box-shadow: var(--box-shadow);
-        }
-        header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
-            color: var(--accent);
-            margin-bottom: 0.3em;
-            letter-spacing: 2px;
-        }
-        header h2 {
-            font-family: 'Roboto Mono', monospace;
-            color: var(--white);
-            font-size: 1.2rem;
-            font-weight: 400;
-        }
-        .contact-quick {
-            margin: 1.2em auto 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.2em;
-        }
-        .contact-quick a {
-            color: var(--cyber-blue);
-            text-decoration: none;
-            padding: 0.4em 1em;
-            background: #07273d;
-            border-radius: 6px;
-            font-weight: bold;
-            border: 2px solid var(--accent);
-            transition: background 0.2s, color 0.2s;
-            font-size: 1rem;
-        }
-        .contact-quick a:hover {
-            background: var(--accent);
-            color: #13302d;
-        }
-        nav {
-            margin:2em 0 2em 0;
-            text-align:center;
-        }
-        nav a {
-            color: var(--accent);
-            text-decoration: none;
-            font-family: 'Roboto Mono', monospace;
-            padding: 0.6em 1.2em;
-            margin: 0 0.5em;
-            border-radius: 8px;
-            border: 1px solid var(--accent-soft);
-            font-weight: 700;
-            background: #121b21a2; 
-            transition: background 0.21s, color 0.18s;
-        }
-        nav a:hover {
-            background: var(--accent);
-            color: #10222b;
-        }
-
-        .main-content {
-            max-width: 900px;
-            margin: 2rem auto 3rem auto;
-            background: rgba(23, 34, 44, 0.96);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            padding: 2.2rem;
-        }
-        section {
-            margin-bottom: 2.5em;
-        }
-        h3 {
-            border-left: 5px solid var(--accent);
-            margin-left: -1.4rem;
-            padding-left: 0.9rem;
-            font-size: 1.45rem;
-            margin-top: 0;
-            color: var(--accent);
-        }
-        hr {border: none; border-top: 1px solid #243f4a; margin: 2em 0; }
-        .tag-list { margin:0.7em 0 1.2em 0; }
-        .tag {
-            display: inline-block;
-            background: var(--accent-soft);
-            color: var(--cyber-blue);
-            border: 1px solid #23ffe9;
-            border-radius: 6px;
-            padding: 0.17em 0.75em;
-            font-size: 0.99em;
-            margin: 0.14em 0.18em;
-        }
-        .experience-block, .block {
-            background: #15212c;
-            padding: 1.22em 1em 0.44em 1em;
-            margin-bottom: 1.7em;
-            border-radius: 9px;
-            box-shadow: 0 1px 7px #21c7c22a;
-        }
-        .exp-role { color: var(--cyber-blue); font-weight: bold; font-size:1.1em;}
-        .exp-institution { font-style: italic; color: var(--cyber-red);}
-        .exp-period { font-family: 'Roboto Mono'; color: var(--grey);}
-        ul, ol {margin-left:1.2rem;}
-        .dual-col { display: flex; flex-wrap: wrap; gap: 2em;}
-        .dual-col > div { flex:1; min-width:240px;}
-        .lang-list, .hobby-list {margin-bottom:1em; font-size: 1.09em;}
-        .lang, .hobby {display: inline-block; margin-right:1em;}
-        .highlight {
-            font-family: 'Roboto Mono';
-            color: var(--cyber-red);
-            font-size: 1.06em;
-            background: #151d24;
-            padding: 0.14em 0.44em;
-            border-radius: 4px;
-        }
-        .cert-id {
-            font-size: 0.98em; color: #76fcff;
-        }
-        @media (max-width: 700px) {
-            .main-content {padding: 0.6rem;}
-            .dual-col {flex-direction: column;}
-            header {padding: 1.2rem 0.5rem;}
-            nav {margin:0.7em 0 1.5em 0;}
-        }
-	    @media (max-width: 700px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  header h2 {
-    font-size: 1rem;
-  }
-  .contact-quick, nav {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0.6em !important;
-    align-items: stretch !important;
-  }
-  .contact-quick a,
-  nav a {
-    width: 100% !important;
-    min-width: unset !important;
-    margin: 0.2em 0 !important;
-    text-align: center !important;
-    font-size: 1.08rem !important;
-    padding: 0.8em 0.4em !important;
-    box-sizing: border-box !important;
-  }
-  nav {
-    padding: 0 2vw !important;
-  }
-  .main-content, section {
-    padding-left: 0.6em !important;
-    padding-right: 0.6em !important;
-  }
-}
-    </style>
+  <meta charset="UTF-8">
+  <title>Vaibhav Malhotra – Cybersecurity Expert & Trainer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --neon-green: #2cffe7;
+      --neon-cyan: #2dffe6;
+      --neon-blue: #36cbff;
+      --neon-pink: #ff40c9;
+      --text-main: #e4fbfb;
+      --bg: #101821;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Segoe UI', 'Roboto Mono', Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+    #header-terminal {
+      text-align: center;
+      background: linear-gradient(90deg, #16232b 60%, #122031 100%);
+      padding: 2.6rem 1rem 0.9rem 1rem;
+      border-bottom: 2px solid var(--neon-green);
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+    }
+    #terminal-bar {
+      width: 68vw; max-width: 320px; margin: 0 auto 16px auto;
+      background: #1b272f;
+      border-radius: 13px 13px 0 0;
+      padding: 0.37em 0; display: flex; gap:7px; justify-content: flex-start; align-items: center;
+    }
+    .term-dot { width: 15px; height: 15px; border-radius: 50%; display: inline-block;}
+    .term-dot.r {background: #fd4d53;}
+    .term-dot.y {background: #fdab26;}
+    .term-dot.g {background: #2ced6c;}
+    #header-terminal h1 {
+      color: #21ffe7;
+      font-size: 2.45rem;
+      font-family: 'Roboto Mono', monospace, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 0 0 .21em 0;
+      text-shadow: 0 0 20px #32fff6, 0 0 12px #31f8b4, 0 0 2px #18f5e1;
+      position: relative;
+      animation: typeEffect 2.8s steps(20, end) 0.5s 1 both, neonPulse 2.1s infinite alternate-reverse;
+      overflow: hidden;
+      border-right: 3px solid #30ffe1;
+      white-space: nowrap;
+    }
+    @keyframes typeEffect {
+      0% { width: 0ch; border-right:3px solid #30ffe1; }
+      70% { width: 21ch; border-right:3px solid #30ffe1;}
+      100% { width:100%; border-right: none;}
+    }
+    @keyframes neonPulse {
+      0% { text-shadow:0 0 12px #31f9e7,0 0 2px #29f2eb;}
+      100% { text-shadow: 0 0 35px #2af9e2,0 0 10px #0ff;}
+    }
+    #header-terminal h2 {
+      color: #b7ffff;
+      font-size: 1.18rem;
+      margin-top: 0.3em;
+      font-family: 'Roboto Mono', monospace, Arial;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+    .contact-quick {
+      margin: 1.02em auto 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2em;
+      z-index:2;
+      position:relative;
+    }
+    .contact-quick a {
+      color: #031b16;
+      text-decoration: none;
+      padding: .46em 1.1em;
+      background: linear-gradient(90deg,#21ffe7,#36cbff);
+      border-radius: 8px;
+      font-weight: 700;
+      border: 2.5px solid #21ffe7;
+      font-size: 1.1rem;
+      display: inline-block;
+      box-shadow: 0 0 9px #1fffeacc;
+      letter-spacing: 1px;
+      filter: brightness(1.08);
+      transition:
+          background .22s,
+          color .21s,
+          box-shadow .22s,
+          filter 0.24s,
+          border .18s;
+      position:relative;
+      overflow:hidden;
+    }
+    .contact-quick a:after {
+      content:"";
+      position:absolute; left:-30%;top:0;width:0;height:100%;
+      background: linear-gradient(112deg,rgba(255,255,255,0.3) 0,rgba(241,255,251,0.2) 60%,rgba(255,255,255,0.02) 100%);
+      z-index:2; transition:all .4s;
+    }
+    .contact-quick a:hover {
+      background: linear-gradient(90deg,#ebfcf8,#2cffe7 70%);
+      color: #171c24;
+      border: 2.5px solid #78ffe5;
+      box-shadow: 0 0 32px #81fffc;
+      filter: brightness(1.23) hue-rotate(-12deg);
+    }
+    .contact-quick a:hover:after {
+      left:100%;width:150%;
+    }
+    nav {
+      text-align: center;
+      margin: 2em 0 2em 0;
+      display: flex; flex-wrap: wrap; gap: 0.8em;
+      justify-content: center; z-index:2; position:relative;
+      font-size:1.07rem;
+    }
+    nav a {
+      color: var(--neon-green);
+      text-decoration: none;
+      font-family: 'Roboto Mono', monospace;
+      padding: .76em 1.51em;
+      border-radius: 7px;
+      border-bottom: 3.6px solid #2effde99;
+      border-top: 2px solid #2559ec18;
+      font-weight: 700;
+      background: #17272d;
+      margin:0 0.09em;
+      letter-spacing: 1.3px;
+      position:relative;
+      box-shadow: 0 0 17px #13f7e2cc inset;
+      transition: background 0.18s, color 0.16s, border 0.18s, box-shadow 0.18s, transform 0.16s;
+      z-index:1;
+      overflow: hidden;
+    }
+    nav a:after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(90deg,#2cffe7 25%,#00ffd0 75%);
+      left: -80%; top: 0; width: 70%; height: 100%;
+      opacity: 0.13; z-index: 0;
+      transition: left 0.28s;
+    }
+    nav a:hover {
+      background: #11f7e426;
+      color: #0e1e1a;
+      border-bottom: 4px solid #dbfdfa;
+      box-shadow: 0 0 38px #29f7fbcc;
+      transform: scale(1.05);
+    }
+    nav a:hover:after { left:90%; }
+    nav a.active {background:#212f28a6;color:var(--neon-pink);}
+    main {
+      max-width: 900px;
+      margin: 2rem auto 3rem auto;
+      background: #18202aeb;
+      border-radius: 19px;
+      box-shadow:0 2px 50px #26bbcfa0;
+      padding: 2.7rem 2.7rem 1.7rem 2.7rem;
+      z-index:2;
+      position:relative;
+      overflow:hidden;
+    }
+    section {
+      margin-bottom: 2.1em;
+      position: relative;
+      opacity: 0;
+      transform: translateY(60px) scale(0.97);
+      transition: opacity 0.95s cubic-bezier(.19,1,.22,1), transform 1.09s cubic-bezier(.19,1,.22,1);
+      will-change: opacity,transform;
+      background: #12191edd;
+      border-radius: 14px;
+      padding: 1.13em 1.15em 0.67em 1.15em;
+      box-shadow: 0 6px 16px #31ffe8a8;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1.01);
+      animation: pulsein 0.66s;
+    }
+    @keyframes pulsein {
+      0% {box-shadow: 0 0 0 #09edc6;}
+      60% {box-shadow: 0 0 33px #31ffe8;}
+      100% {box-shadow: 0 6px 16px #31ffe8a8;}
+    }
+    h3 {
+      color: var(--neon-green);
+      border-left: 6px solid var(--neon-blue);
+      margin-left: -1.13rem;
+      padding-left: 0.83rem;
+      font-size: 1.31rem;
+      margin-top: 0;
+      letter-spacing:1.2px;
+      display: flex;
+      align-items: center;
+      gap:9px;
+    }
+    /* SVG icon in h3 */
+    .sec-icon {width: 1.5em; height: 1.5em; margin-right: .3rem; vertical-align:middle;filter:drop-shadow(0 0 3px #22ffe6);}
+    ul, ol {margin-left:1.1rem;margin-bottom:1.11rem;}
+    strong, b {color:var(--neon-blue);}
+    .declaration {
+      color: #eaeaea;
+      font-style: italic;
+      background: #1d242b;
+      border-left: 4px solid #2acedc;
+      border-radius: 8px;
+      padding: 1.15em;
+      margin-bottom:1.3rem;
+    }
+    .contact-list{line-height:2;margin:0;}
+    .cyber-divider {
+      width:96%;height:2px; background: repeating-linear-gradient(90deg, var(--neon-cyan) 0 16%, transparent 24% 34%, var(--neon-blue) 40% 41%, transparent 54% 62%, var(--neon-green) 68% 86%);
+      margin:2.1rem auto 2.3rem auto;border-radius:2px;opacity:.28;
+      filter:blur(0.2px);
+    }
+    /* Neon-circuit SVG floating BG */
+    .float-circuit {
+      position: absolute;
+      z-index:0;
+      opacity: 0.16;
+    }
+    .float-circuit.top { left:0;top:-33px;width:140px;height:auto;animation:floaty 7s ease-in-out infinite alternate;}
+    .float-circuit.bot { right:0;bottom:-20px;width:140px;height:auto;animation:floaty 9s ease-in-out infinite alternate-reverse;}
+    @keyframes floaty { 0% {transform:translateY(0);} 100%{transform:translateY(22px);}}
+    @media (max-width: 700px) {
+      #header-terminal h1 {font-size: 1.36rem;}
+      main, section {padding-left:0.57em !important;padding-right:0.57em !important;}
+      .contact-quick,nav{flex-direction:column;align-items:stretch;gap:0.7em;}
+      .contact-quick a, nav a {width:100%; text-align:center;padding:1em 0.3em;}
+      nav {padding:0 2vw;}
+      main {padding:1.1rem .45rem 1.5rem .45rem;}
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Vaibhav Malhotra</h1>
-        <h2>Trainer & Cyber Security Analyst – Ahmedabad, Gujarat</h2>
-        <div class="contact-quick">
-            <a href="mailto:vaibhavmalhotra969@gmail.com">✉️ Email</a>
-            <a href="tel:+918005968969">📞 +91 8005968969</a>
-            <a href="https://linkedin.com/in/vaibhav-malhotra-3826511a0" target="_blank">🔗 LinkedIn</a>
-        </div>
-    </header>
-    <nav>
-        <a href="#profile">Profile</a>
-        <a href="#skills">Skills & Competencies</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#languages">Languages</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="main-content">
-        <section id="profile">
-            <h3>Professional Profile</h3>
-            <div class="block">
-                <p>
-                    <span class="highlight">“I am a skilled Cyber Security Analyst and an experienced Trainer with 5+ years of hands-on expertise.”</span>
-                </p>
-                <p>
-                    In the fast-changing landscape of cyberspace, <b>Vaibhav Malhotra</b> stands out as a technical expert and passionate educator. With a blend of practical VAPT (Vulnerability Assessment & Penetration Testing), application/software/cloud security, advanced threat detection (XDR), and proven teaching ability, I have empowered both aspiring and seasoned professionals.
-                </p>
-                <p>
-                    I have delivered impactful training sessions, workshops, and seminars in universities, colleges, and organizations across India. My curriculum spans critical domains like Data Protection, Information Security, Threat Detection, Network Defense, and Social Engineering. I pride myself on making cybersecurity interactive—with hands-on exercises, live demos, and real-world defensive strategies.
-                </p>
-                <ul>
-                    <li>5+ years as Chief Cybersecurity Trainer (Freelancing & Corporate)</li>
-                    <li>1.5+ years as Cyber Security Analyst for 8+ enterprise clients</li>
-                    <li>Dozens of keynote addresses and seminars on Ethical Hacking, Data Security, and Incident Response</li>
-                    <li>Designer and mentor for cyber awareness campaigns, bootcamps, and professional upskilling</li>
-                    <li>Technical expertise with Metasploit, SIEM platforms, IDS/IPS, XDR, endpoint security, and incident management</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h3>Skills & Core Competencies</h3>
-            <div class="tag-list">
-                <span class="tag">VAPT</span>
-                <span class="tag">Network Security</span>
-                <span class="tag">Web App Security</span>
-                <span class="tag">Cloud & Firewall Security</span>
-                <span class="tag">Malware Analysis</span>
-                <span class="tag">Risk Management</span>
-                <span class="tag">SIEM Tool Management</span>
-                <span class="tag">Incident Response</span>
-                <span class="tag">Endpoint Security</span>
-                <span class="tag">GAP & Risk Assessment</span>
-                <span class="tag">Cybersecurity Audit</span>
-                <span class="tag">Training & Awareness</span>
-                <span class="tag">Bug Hunting</span>
-                <span class="tag">SOC Skills</span>
-                <span class="tag">Ethical Hacking</span>
-                <span class="tag">Technical Reporting</span>
-                <span class="tag">GRC Proficiency</span>
-                <span class="tag">SIEM Monitoring</span>
-                <span class="tag">Research</span>
-                <span class="tag">Resilient Defense</span>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h3>Professional Experience</h3>
-            <div class="experience-block">
-                <span class="exp-role">Chief Cyber Security Trainer (Freelance)</span>
-                <span class="exp-period">20/05/2020 – Present</span>
-                <ul>
-                    <li>Delivered 5+ years of cybersecurity training to students and professionals in colleges, universities, and companies.</li>
-                    <li>Designed customized workshops, seminars, bootcamps, and complete training programs for all skill levels.</li>
-                    <li>Mentored professionals and students in certifications, career planning, and technical upskilling.</li>
-                    <li>Built interactive exercises and cyber labs for VAPT, incident response, and tool mastery (Metasploit, SIEM, IDS/IPS, etc.).</li>
-                    <li>Keynote speaker for security conferences, and collaborated with educational institutions on large-scale programs.</li>
-                    <li>Delivered post-training support and resources for sustainable skill growth.</li>
-                </ul>
-            </div>
-            <div class="experience-block">
-                <span class="exp-role">Cybersecurity Analyst</span> <span class="exp-institution">I2e Consulting</span>
-                <span class="exp-period">10/09/2024 – Present</span>
-                <ul>
-                    <li>Conducted regular vulnerability assessments and penetration testing on network, web/mobile apps, and systems.</li>
-                    <li>Monitored for threats and managed incidents using SIEM tools and best practices.</li>
-                    <li>Risk assessments, mitigation strategies, and security policy development to ensure ISO 27001, GDPR, and client compliance.</li>
-                    <li>Internal/external security audits, firewall/IDS management, secure access control, and employee training.</li>
-                    <li>Regular reporting to management on risks, incidents, audit findings, and overall cyber posture.</li>
-                </ul>
-            </div>
-            <div class="experience-block">
-                <span class="exp-role">Trainer & Cybersecurity Analyst</span> <span class="exp-institution">Cyber Octet Pvt. Ltd.</span>
-                <span class="exp-period">01/09/2023 – 24/08/2024</span>
-                <ul>
-                    <li>Security assessments and audits; delivered advanced training sessions, workshops, and hands-on labs for all stakeholders.</li>
-                    <li>Maintained cybersecurity tools: AV, firewall, IDS, encryption. Developed technical assessments, practicals, and evaluation materials.</li>
-                </ul>
-            </div>
-            <div class="experience-block">
-                <span class="exp-role">Supervisor & Working Capital Manager</span> <span class="exp-institution">Sangam Spinners, Bhilwara</span>
-                <span class="exp-period">15/05/2017 – 20/07/2017</span>
-                <ul>
-                    <li>Supervised workflows, coached teams, resolved disputes, and monitored company cash flow and assets.</li>
-                </ul>
-            </div>
-            <div class="experience-block">
-                <span class="exp-role">Order Processor</span> <span class="exp-institution">SmartShop123, Bhilwara</span>
-                <span class="exp-period">20/03/2020 – 31/07/2020</span>
-                <ul>
-                    <li>Managed goods flow, tracked orders, and maintained inventory and profit/cost analysis records.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h3>Certifications</h3>
-            <ul>
-		<li>Certified Ethical Hacker byr EC-Council (CEHv12)</li>
-                <li>Advent of Cybersecurity 2022 & 2023 (TryHackMe)</li>
-                <li>Network Security Essentials (EC-Council)</li>
-                <li>Web-application Security Pathway (TryHackMe)</li>
-                <li>Intro to Offensive Security Pathway room (TryHackMe)</li>
-                <li>Intro to Defensive Security Pathway room (TryHackMe)</li>
-                <li>OWASP Top 10 Web Room (TryHackMe)</li>
-                <li>OWASP Top 10 API Room (TryHackMe)</li>
-                <li>Linux Fundamentals Pathway (TryHackMe)</li>
-                <li><b>ISO/IEC 27001:2022</b> Information Security Associate™</li>
-                <li>Star Cyber Secure User (SCSU) <span class="cert-id">(STR22SCU00181745)</span></li>
-                <li>Star Information Technology Essential (SITE) <span class="cert-id">(STR22ITE00202053)</span></li>
-                <li>Junior Penetration Tester Pathway (TryHackMe) <span class="cert-id">(THM-3HF1MHAHN6)</span></li>
-                <li>Internal Network Penetration Testing (Spin the Hack) <span class="cert-id">(221201155)</span></li>
-                <li>Red Team Capstone Challenge (TryHackMe)</li>
-            </ul>
-        </section>
-
-        <section class="dual-col" id="languages">
-            <div>
-                <h3>Languages</h3>
-                <div class="lang-list">
-                    <span class="lang">English</span>
-                    <span class="lang">Hindi</span>
-                </div>
-            </div>
-            <div>
-                <h3 id="hobbies">Hobbies</h3>
-                <div class="hobby-list">
-                    <span class="hobby">Learning New Things</span>
-                    <span class="hobby">Travelling</span>
-                    <span class="hobby">Public Speaking</span>
-                    <span class="hobby">Knowledge Sharing</span>
-                    <span class="hobby">Research</span>
-                    <span class="hobby">Gaming</span>
-                    <span class="hobby">Bug Hunting</span>
-                    <span class="hobby">Curating Content</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h3>Contact</h3>
-            <div class="block">
-                <ul>
-                    <li><b>Email:</b> <a href="mailto:vaibhavmalhotra969@gmail.com" class="highlight">vaibhavmalhotra969@gmail.com</a></li>
-                    <li><b>Mobile:</b> <a href="tel:+918005968969" class="highlight">+91 8005968969</a></li>
-                    <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/vaibhav-malhotra-3826511a0" class="highlight" target="_blank">vaibhav-malhotra-3826511a0</a></li>
-                    <li><b>Location:</b> Bhilwara, Rajasthan (Open to remote/cross-location)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h3>Declaration</h3>
-            <div class="block">
-                <p>
-                    I, <b>Vaibhav Malhotra</b>, hereby declare that the information contained herein is true and correct to the best of my knowledge and belief.<br>
-                    <i>I would love to work with your organization and promise to give my 100% contribution for the growth of the company.</i>
-                </p>
-                <p>
-                    Place: Bhilwara, Rajasthan<br>
-                    <b>(Vaibhav Malhotra)</b>
-                </p>
-            </div>
-        </section>
+  <!-- Animated header with terminal bar -->
+  <div id="header-terminal">
+    <div id="terminal-bar">
+      <span class="term-dot r"></span>
+      <span class="term-dot y"></span>
+      <span class="term-dot g"></span>
     </div>
-    <footer style="text-align:center; color:#57ffb7; font-size:1.06rem; margin-bottom:1.8rem;">
-        &copy; 2025 Vaibhav Malhotra &mdash; Portfolio. All Rights Reserved.
-    </footer>
+    <h1>Vaibhav Malhotra</h1>
+    <h2>Trainer & Cybersecurity Analyst – Ahmedabad, Gujarat</h2>
+    <div class="contact-quick">
+      <a href="mailto:vaibhavmalhotra969@gmail.com">✉️ Email</a>
+      <a href="tel:+918005968969">📞 +91 8005968969</a>
+      <a href="https://linkedin.com/in/vaibhav-malhotra-3826511a0" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </div>
+  <nav>
+    <a href="#profile" class="active">Profile</a>
+    <a href="#skills">Skills & Competencies</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#languages">Languages</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- SVG floating graphics -->
+  <svg class="float-circuit top" viewBox="0 0 185 120">
+    <polyline points="10,15 92,15 92,65 170,65" stroke="#2cffe7" stroke-width="5" fill="none" opacity="0.8"/>
+    <circle cx="92" cy="65" r="6" fill="#36cbff" />
+    <rect x="140" y="60" width="10" height="10" fill="#21ffe7"/>
+    <circle cx="10" cy="15" r="8" fill="#12fff2"/>
+  </svg>
+  <svg class="float-circuit bot" viewBox="0 0 170 120">
+    <polyline points="140,95 76,95 76,35 20,35" stroke="#36cbff" stroke-width="5" fill="none"/>
+    <rect x="60" y="92" width="12" height="12" fill="#37f4bc"/>
+    <circle cx="20" cy="35" r="8" fill="#12fff2"/>
+  </svg>
+  <main>
+    <section id="profile">
+      <h3>
+        <svg class="sec-icon" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="#2cffe7" stroke-width="3" fill="none"/><path d="M10 18C11.8 19.5 14.2 19.5 16 18" stroke="#36cbff" stroke-width="2" fill="none"/><circle cx="16" cy="13" r="5" stroke="#36cbff" stroke-width="2" fill="none"/></svg>
+        Professional Profile
+      </h3>
+      <p>“I am a skilled Cyber Security Analyst and an experienced Trainer with 5+ years of hands-on expertise.”</p>
+      <p>
+        In the fast-changing landscape of cyberspace, <b>Vaibhav Malhotra</b> stands out as a technical expert and passionate educator. With a blend of practical VAPT (Vulnerability Assessment & Penetration Testing), application/software/cloud security, advanced threat detection (XDR), and proven teaching ability, I have empowered both aspiring and seasoned professionals.
+      </p>
+      <p>
+        I have delivered impactful training sessions, workshops, and seminars in universities, colleges, and organizations across India. My curriculum spans critical domains like Data Protection, Information Security, Threat Detection, Network Defense, and Social Engineering. I pride myself on making cybersecurity interactive—with hands-on exercises, live demos, and real-world defensive strategies.
+      </p>
+      <ul>
+        <li>5+ years as Chief Cybersecurity Trainer (Freelancing & Corporate)</li>
+        <li>1.5+ years as Cyber Security Analyst for 8+ enterprise clients</li>
+        <li>Dozens of keynote addresses and seminars on Ethical Hacking, Data Security, and Incident Response</li>
+        <li>Designer and mentor for cyber awareness campaigns, bootcamps, and professional upskilling</li>
+        <li>Technical expertise with Metasploit, SIEM platforms, IDS/IPS, XDR, endpoint security, and incident management</li>
+      </ul>
+    </section>
+    <div class="cyber-divider"></div>
+    <section id="skills">
+      <h3>
+        <svg class="sec-icon" viewBox="0 0 36 36"><rect x="10" y="10" width="16" height="16" rx="5" stroke="#36cbff" stroke-width="3" fill="#132328"/><path d="M16 16L20 20M20 16L16 20" stroke="#21ffe7" stroke-width="2"/></svg>
+        Skills & Core Competencies
+      </h3>
+      <ul>
+        <li>VAPT (Vulnerability Assessment & Penetration Testing)</li>
+        <li>Network Security</li>
+        <li>Web Application Security</li>
+        <li>Cloud & Firewall Security</li>
+        <li>Malware Analysis</li>
+        <li>Risk Management & GAP Analysis</li>
+        <li>SIEM Tool Management, SIEM Monitoring</li>
+        <li>Incident Management & Response</li>
+        <li>Endpoint Security</li>
+        <li>Cybersecurity Trainer & Awareness</li>
+        <li>Bug Hunting</li>
+        <li>GRC Proficiency, Security Audit</li>
+        <li>Technical Reporting & Research</li>
+        <li>Ethical Hacking</li>
+      </ul>
+    </section>
+    <div class="cyber-divider"></div>
+    <section id="experience">
+      <section id="experience">
+  <h3>
+    <svg class="sec-icon" viewBox="0 0 35 35"><circle cx="17" cy="17" r="13" fill="#101821" stroke="#2cffe7" stroke-width="3"/><rect x="13" y="13" width="9" height="9" rx="2" fill="#1de4ea" opacity=".7"/><rect x="8" y="22" width="18" height="3" fill="#21ffe7" opacity=".65"/></svg>
+    Professional Experience
+  </h3>
+
+  <!-- Chief Cyber Security Trainer -->
+  <div class="section-block" style="margin-bottom:1.6em;">
+    <h4 style="margin-bottom:0.2em;color:#21ffe7;">
+      Chief Cyber Security Trainer <span style="color:#38ffcb;font-weight:500;">(Freelancing)</span>
+    </h4>
+    <div style="font-size:0.98em;color:#81fffc;margin-bottom:.16em;">
+      May 2020 – Present
+    </div>
+    <ul>
+      <li>Delivered 5+ years of cybersecurity training to students and professionals in colleges, universities, and companies.</li>
+      <li>Designed customized workshops, seminars, bootcamps, and full training programs for all skill levels.</li>
+      <li>Mentored professionals and students in certifications, career planning, and technical upskilling.</li>
+      <li>Built interactive exercises and cyber labs for VAPT, incident response, Metasploit, SIEM, IDS/IPS, and more.</li>
+      <li>Keynote speaker for security conferences, collaborating with educational institutions on large-scale programs.</li>
+      <li>Delivered post-training support and resources for sustainable skill growth.</li>
+    </ul>
+  </div>
+
+  <!-- Cybersecurity Analyst, I2e Consulting -->
+  <div class="section-block" style="margin-bottom:1.6em;">
+    <h4 style="margin-bottom:0.2em;color:#21ffe7;">
+      Cybersecurity Analyst <span style="color:#38ffcb;font-weight:500;">I2e Consulting</span>
+    </h4>
+    <div style="font-size:0.98em;color:#81fffc;margin-bottom:.16em;">
+      Sep 2024 – Present
+    </div>
+    <ul>
+      <li>Conducted vulnerability assessments and penetration testing on network, web/mobile apps, and systems.</li>
+      <li>Monitored threats and managed incidents using SIEM tools and best practices.</li>
+      <li>Implemented risk assessments, mitigation strategies, and security policies to ensure ISO 27001, GDPR compliance.</li>
+      <li>Handled internal/external security audits, firewall/IDS management, access control, and employee training.</li>
+      <li>Prepared regular reports for management on risks, incidents, audit findings, and overall cyber posture.</li>
+    </ul>
+  </div>
+
+  <!-- Trainer & Cybersecurity Analyst, Cyber Octet Pvt. Ltd. -->
+  <div class="section-block" style="margin-bottom:1.6em;">
+    <h4 style="margin-bottom:0.2em;color:#21ffe7;">
+      Trainer & Cybersecurity Analyst <span style="color:#38ffcb;font-weight:500;">Cyber Octet Pvt. Ltd.</span>
+    </h4>
+    <div style="font-size:0.98em;color:#81fffc;margin-bottom:.16em;">
+      Sep 2023 – Aug 2024
+    </div>
+    <ul>
+      <li>Led security assessments and audits; delivered advanced training sessions, workshops, and hands-on labs for all stakeholders.</li>
+      <li>Maintained cybersecurity tools (AV, firewall, IDS, encryption).</li>
+      <li>Developed technical assessments, practicals, and evaluation materials for corporate and academic audiences.</li>
+    </ul>
+  </div>
+
+  <!-- Supervisor & Working Capital Manager, Sangam Spinners -->
+  <div class="section-block" style="margin-bottom:1.6em;">
+    <h4 style="margin-bottom:0.2em;color:#21ffe7;">
+      Supervisor & Working Capital Manager <span style="color:#38ffcb;font-weight:500;">Sangam Spinners, Bhilwara</span>
+    </h4>
+    <div style="font-size:0.98em;color:#81fffc;margin-bottom:.16em;">
+      May 2017 – July 2017
+    </div>
+    <ul>
+      <li>Supervised workflow, coached teams, resolved disputes, and monitored company cash flow and assets.</li>
+    </ul>
+  </div>
+
+  <!-- Order Processor, SmartShop123 -->
+  <div class="section-block" style="margin-bottom:.8em;">
+    <h4 style="margin-bottom:0.2em;color:#21ffe7;">
+      Order Processor <span style="color:#38ffcb;font-weight:500;">SmartShop123, Bhilwara</span>
+    </h4>
+    <div style="font-size:0.98em;color:#81fffc;margin-bottom:.16em;">
+      Mar 2020 – July 2020
+    </div>
+    <ul>
+      <li>Managed product flow for customers, tracked orders, maintained inventory and profit/cost analysis records.</li>
+    </ul>
+  </div>
+    </section>
+    <div class="cyber-divider"></div>
+    <section id="certifications">
+      <h3>
+        <svg class="sec-icon" viewBox="0 0 33 33"><rect x="7" y="11" width="19" height="11" rx="3" fill="#101821" stroke="#2cffe7" stroke-width="3"/><rect x="12" y="6" width="9" height="8" rx="2" fill="#36cbff" /></svg>
+        Certifications
+      </h3>
+      <ul>
+        <li>Certified Ethical Hacker by EC-Council (CEHv12)</li>
+        <li>Advent of Cybersecurity 2022 & 2023 (TryHackMe)</li>
+        <li>Network Security Essentials (EC-Council)</li>
+        <li>Web-application Security Pathway (TryHackMe)</li>
+        <li>Intro to Offensive Security Pathway room (TryHackMe)</li>
+        <li>Intro to Defensive Security Pathway room (TryHackMe)</li>
+        <li>OWASP Top 10 Web Room (TryHackMe)</li>
+        <li>OWASP Top 10 API Room (TryHackMe)</li>
+        <li>Linux Fundamentals Pathway (TryHackMe)</li>
+        <li>ISO/IEC 27001:2022 Information Security Associate™</li>
+        <li>Star Cyber Secure User (SCSU) (STR22SCU00181745)</li>
+        <li>Star Information Technology Essential (SITE) (STR22ITE00202053)</li>
+        <li>Junior Penetration Tester Pathway (TryHackMe) (THM-3HF1MHAHN6)</li>
+        <li>Internal Network Penetration Testing (Spin the Hack) (221201155)</li>
+        <li>Red Team Capstone Challenge (TryHackMe)</li>
+      </ul>
+    </section>
+    <div class="cyber-divider"></div>
+    <section id="languages">
+      <h3>
+        <svg class="sec-icon" viewBox="0 0 32 32"><ellipse cx="16" cy="17" rx="13" ry="9" fill="#21ffe7" opacity=".6"/><text x="16" y="21" font-size="10" text-anchor="middle" fill="#101821" font-family="monospace" font-weight="bold">EN</text></svg>
+        Languages
+      </h3>
+      <ul>
+        <li>English</li>
+        <li>Hindi</li>
+      </ul>
+    </section>
+    <div class="cyber-divider"></div>
+    <section id="hobbies">
+      <h3>
+        <svg class="sec-icon" viewBox="0 0 36 36"><polygon points="6,28 18,6 30,28" fill="#36cbff" opacity="0.5"/><circle cx="18" cy="22" r="4" fill="#21ffe7" /></svg>
+        Hobbies
+      </h3>
+      <p>
+        Learning New Things, Travelling to New Places, Public Speaking, Sharing Knowledge, Research related to work, Gaming, Bug Hunting, Gathering Knowledgeable Content
+      </p>
+    </section>
+    <div class="cyber-divider"></div>
+    <section id="contact">
+      <h3>
+        <svg class="sec-icon" viewBox="0 0 36 36"><rect x="8" y="8" width="20" height="20" rx="7" fill="none" stroke="#21ffe7" stroke-width="4"/><circle cx="18" cy="18" r="5" fill="#36cbff"/></svg>
+        Contact
+      </h3>
+      <ul class="contact-list">
+        <li><b>Email:</b> vaibhavmalhotra969@gmail.com</li>
+        <li><b>Mobile:</b> +91 8005968969</li>
+        <li><b>LinkedIn:</b> vaibhav-malhotra-3826511a0</li>
+        <li><b>Location:</b> Bhilwara, Rajasthan (Open to remote/cross-location)</li>
+      </ul>
+    </section>
+    <section class="declaration visible">
+      <b>Declaration:</b><br>
+      I, <b>Vaibhav Malhotra</b>, hereby declare that the information contained herein is true and correct to the best of my knowledge and belief.<br>
+      <em>I would love to work with your organization and promise to give my 100% contribution for the growth of the company.</em><br>
+      Place: Bhilwara, Rajasthan<br>
+      <b>(Vaibhav Malhotra)</b>
+    </section>
+  </main>
+  <footer style="text-align:center; color:#31f8b4; font-size:1.08rem; margin-bottom:2rem;z-index:2;position:relative;">
+    &copy; 2025 Vaibhav Malhotra – Portfolio. All Rights Reserved.
+  </footer>
+  <script>
+    // Fade+Pulse section animation on scroll
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('main section:not(.visible)');
+      for (const sec of reveals) {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight-60) sec.classList.add('visible');
+      }
+    }
+    window.addEventListener('scroll', revealOnScroll, { passive: true });
+    window.addEventListener('load', revealOnScroll);
+
+    // Animated nav highlight
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('nav a').forEach(l=>l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
